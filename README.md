@@ -4,6 +4,16 @@ A simple tool to create hash values for any chosen file and to compare the publi
 Supported hash algorithms:<br>
 SHA1, SHA224, SHA3_224, SHA256, SHA3_256, SHA384, SHA3_384, SHA512, SHA3_512, shake_128, shake_256, MD5, blake2s, blake2b.<br>
 
+## Download Info: <br>
+<h3> Latest ready-to-use version:</h3>
+<h3><a href=''>Download AutoHasher.exe</a><br></h3>
+<br>
+Download the .exe and execute it as an administrator.<br>
+<br>
+Your antivirus might flag the program when trying to open it for the first time.
+<h3>Be reassured: It's open source and safe for you and your data!</h3><br>
+<h3>Use wisely!</h3><br>
+
 <h2>Support the project:</h2><br>
 <p float='left'>
 <a href='https://ethereum.org/en/stablecoins/'>
