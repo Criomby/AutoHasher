@@ -29,7 +29,4 @@ Message me at: <br>
 <b>criomby@pm.me</b><br>
 <br>
 <br>
-Playing cards back copyright: <a href="https://www.vecteezy.com/free-vector/playing-card-back">Playing Card Back Vectors by Vecteezy</a><br>
-<br>
-<br>
 © 2021 Criomby
