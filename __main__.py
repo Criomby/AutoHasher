@@ -41,9 +41,6 @@ class App(tk.Tk):
         self.entry_hashtocheck = tk.Entry(width=70)
 
         # dropdown menu
-        # guaranteed algorithms by hashlib:
-        # {'md5', 'shake_256', 'blake2s', 'sha224', 'sha1', 'blake2b', 'sha3_384',
-        # 'sha3_224', 'sha3_256', 'sha3_512', 'sha384', 'sha256', 'sha512', 'shake_128'}
         self.hash_algorithms = ('SHA1', 'SHA224', 'SHA3_224', 'SHA256', 'SHA3_256',
                                 'SHA384', 'SHA3_384', 'SHA512', 'SHA3_512', 'MD5',
                                 'blake2s', 'blake2b', 'shake_128', 'shake_256'
@@ -166,25 +163,21 @@ class App(tk.Tk):
             file_hash = hashlib.shake_256()
         else:
             print('error in gen_hash()')
-        with open(file, 'rb') as f:  # Open the file to read it's bytes
-            fb = f.read(BLOCK_SIZE)  # Read from the file. Take in the amount declared above
-            while len(fb) > 0:  # While there is still data being read from the file
-                file_hash.update(fb)  # Update the hash
-                fb = f.read(BLOCK_SIZE)  # Read the next block from the file
-        output = file_hash.hexdigest() # Get the hexadecimal digest of the hash
+        with open(file, 'rb') as f:
+            fb = f.read(BLOCK_SIZE)
+            while len(fb) > 0:
+                file_hash.update(fb)
+                fb = f.read(BLOCK_SIZE)
+        output = file_hash.hexdigest()
         print('Algorithm:', self.options_var.get())
         print('Hash value:', output)
         return output
 
-
     # function to get files found in the pyinstaller --onefile exe,
     # which sets the path not as 'env' anymore, but as sys._MEIPASS
-    # Copyright:
-    # https://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile/13790741#13790741
+    # from: https://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile/13790741#13790741
     def resource_path(self, relative_path):
-        """ Get absolute path to resource, works for dev and for PyInstaller """
         try:
-            # PyInstaller creates a temp folder and stores path in _MEIPASS
             base_path = sys._MEIPASS
         except Exception:
             base_path = os.path.abspath(".")
