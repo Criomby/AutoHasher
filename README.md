@@ -6,7 +6,7 @@ SHA1, SHA224, SHA3_224, SHA256, SHA3_256, SHA384, SHA3_384, SHA512, SHA3_512, sh
 
 ## Download Info: <br>
 <h3> Latest ready-to-use version:</h3>
-<h3><a href=''>Download AutoHasher.exe</a><br></h3>
+<h3><a href='https://github.com/Criomby/AutoHasher/releases/download/v1%2C0/AutoHasher_v1.0.exe'>Download AutoHasher.exe</a><br></h3>
 <br>
 Download the .exe and execute it as an administrator.<br>
 <br>
