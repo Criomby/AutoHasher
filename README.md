@@ -3,6 +3,9 @@ A simple tool to create hash values for any chosen file and to compare the publi
 
 <em>Supported hash algorithms:<br>
 SHA1, SHA224, SHA3_224, SHA256, SHA3_256, SHA384, SHA3_384, SHA512, SHA3_512, shake_128, shake_256, MD5, blake2s, blake2b.</em><br>
+<br>
+<p align='center'><img src="https://user-images.githubusercontent.com/86114549/133703332-76b35c06-1040-47b3-aadc-371527b219c0.png" alt="GUI_AutoHasher_showcase_ubuntu.png" width="400"></p>
+<br>
 
 ## Download Info: <br>
 <h3> Latest ready-to-use version:</h3>
