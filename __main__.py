@@ -4,6 +4,7 @@
 import hashlib
 import tkinter as tk
 from tkinter import filedialog as fd
+from PIL import ImageTk, Image
 import os
 import sys
 
@@ -13,12 +14,16 @@ class App(tk.Tk):
         super(App, self).__init__()
 
         # GUI
-        self.title('AutoHashCheck')
-        #self.iconbitmap(self.resource_path('icon_cgg.ico'))
-        self.geometry('420x500')
+        self.title('AutoHasher')
+        self.iconbitmap(self.resource_path('autohasher_logo.ico'))
+        self.geometry('420x530')
         self.resizable(True, False)
 
-        # frames
+        # image
+        self.logo = self.resource_path('hash_logo_incode_grey.jpg')
+        self.logo_open = Image.open(self.logo)
+        self.img_logo = ImageTk.PhotoImage(self.logo_open)
+        self.label_logo = tk.Label(image=self.img_logo)
 
         # labels
         self.label_select_menu = tk.Label(text='Select the hash algorithm:')
@@ -62,6 +67,7 @@ class App(tk.Tk):
                                       )
 
         # packs
+        self.label_logo.pack()
         self.label_select_menu.pack(pady=5)
         self.option_menu.pack(pady=5)
         self.button_openfile.pack(pady=10)
