@@ -15,8 +15,27 @@ Download the .exe and execute it as an administrator.<br>
 <br>
 Your antivirus might flag the program when trying to open it for the first time.
 <h3>Be reassured: It's open source and safe for you and your data!</h3><br>
-<h3>Use wisely!</h3><br>
 
+Verify your download:<br>
+(SHA256sum) 3e4522c19632fa5157aa5a92cf0d5bf46afe9b055f061fe39e45592ead22d969<br>
+<br>
+<br>
+<h2>User manual:</h2><br>
+<ol>
+<li>Select the desired hash algorithm.</li>
+<li>Open the file you want to generate the hash value / check the value.
+<ul>
+<li>The hash value for the openend file will automatically be generated in the first text field.</li>
+<li>If you want to generate another hash value, open another file (or the same file with another hash algoritm selected).</li>
+</ul>
+</li>
+<br>
+<em>If you want to check whether a public hash value matches a file:</em>
+<li>Enter the hash value to check in the second text field.</li>
+<li>Press "Check". The result will be shown at the bottom of the window.</li>
+</ol>
+<br>
+<br>
 <h2>Support the project:</h2><br>
 <p float='left'>
 <a href='https://ethereum.org/en/stablecoins/'>
