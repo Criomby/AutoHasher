@@ -8,6 +8,7 @@ from PIL import ImageTk, Image
 import os
 import sys
 
+
 class App(tk.Tk):
 
     def __init__(self):
@@ -134,7 +135,7 @@ class App(tk.Tk):
         BLOCK_SIZE = 65536  # The size of each read from the file
         # Create the hash object
         if self.options_var.get() == 'SHA1':
-            file_hash = hashlib.sha256()
+            file_hash = hashlib.sha1()
         elif self.options_var.get() == 'SHA224':
             file_hash = hashlib.sha224()
         elif self.options_var.get() == 'SHA3_224':
@@ -163,6 +164,7 @@ class App(tk.Tk):
             file_hash = hashlib.shake_256()
         else:
             print('error in gen_hash()')
+            
         with open(file, 'rb') as f:
             fb = f.read(BLOCK_SIZE)
             while len(fb) > 0:
@@ -183,6 +185,7 @@ class App(tk.Tk):
             base_path = os.path.abspath(".")
         return os.path.join(base_path, relative_path)
 
+    
 if __name__ == '__main__':
     app = App()
     app.mainloop()
