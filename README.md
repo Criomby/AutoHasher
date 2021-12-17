@@ -9,7 +9,7 @@ SHA1, SHA224, SHA3_224, SHA256, SHA3_256, SHA384, SHA3_384, SHA512, SHA3_512, sh
 
 ## Download Info: <br>
 <h3> Latest ready-to-use version:</h3>
-<h3><a href='https://github.com/Criomby/AutoHasher/releases/download/v1%2C0/AutoHasher_v1.0.exe'>Download AutoHasher.exe</a><br></h3>
+<h3><a href='https://github.com/Criomby/AutoHasher/releases/download/v1.1/AutoHasher_v1.1.exe'>Download AutoHasher_v1.1.exe</a><br></h3>
 <br>
 Download the .exe and execute it as an administrator.<br>
 <br>
@@ -17,7 +17,7 @@ Your antivirus might flag the program when trying to open it for the first time.
 <h3>Be reassured: It's open source and safe for you and your data!</h3><br>
 
 Verify your download:<br>
-(SHA256sum) 3e4522c19632fa5157aa5a92cf0d5bf46afe9b055f061fe39e45592ead22d969<br>
+(SHA256sum) 7ece818f0ac6fef2f0ee81b47c83eded99aaf24cedf82216f4918b703f7b81c5<br>
 <br>
 <br>
 <h2>User manual:</h2><br>
